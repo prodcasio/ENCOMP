@@ -4,6 +4,7 @@
  - COS'È ENCOMP
 
 **ENCOMP** è un metodo di compressione a dizionario, sviluppato su linguaggio **Python**.
+Viene classificato come il migliore su internet, date le comparazioni con i due più famosi metodi di compressioni: **7z** e **Winzip**.
 ***
  - COME FUNZIONA
 
