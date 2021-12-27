@@ -78,7 +78,7 @@ Questo metodo di compressione è basato su un dizionario, di conseguenza gli acc
 Uno degli aspetti più vantaggiosi di **ENCOMP** è quello di lasciare il file compresso in un file con formato “.txt” evitando modifiche di estensioni che potrebbero causare l’aumento delle dimensioni del file.
 
 Di seguito si mostrano le comparazioni tra **7zip, WinZip e ENCOMP**.
-
+![comparazione](https://user-images.githubusercontent.com/91328373/147512599-0fea471c-8c50-4679-8c11-d7643441aa2d.png)
 
 
 File Originale: 381 byte
