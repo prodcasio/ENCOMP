@@ -2,14 +2,14 @@
 
  - WHAT IS ENCOMP
 
-** ENCOMP ** is a dictionary compression method, developed on ** Python ** language.
-It is ranked as the best on the internet, given comparisons with the two most popular compression methods: ** 7z ** and ** Winzip **.
+**ENCOMP** is a dictionary compression method, developed on **Python** language.
+It is ranked as the best on the internet, given comparisons with the two most popular compression methods: **7z** and **Winzip**.
 Its use should be intended for sending encrypted and compressed messages to prevent third parties from intercepting communications.
 For efficient encryption, generate a dictionary containing the same words as the original "Italia2.txt" but in mixed order.
 ***
  - HOW DOES IT WORK
 
-It uses a list of ** 279.894 ** Italian words, ordered in order of increasing length, called "* dictionary *", to compress sentences or words of any length, syntactically correct or not.
+It uses a list of **279.894** Italian words, ordered in order of increasing length, called "*dictionary*", to compress sentences or words of any length, syntactically correct or not.
 
 The program will make them incomprehensible to those who do not have the "dictionary", making this compression method also an efficient coding method.
 ***
@@ -70,16 +70,16 @@ The program will make them incomprehensible to those who do not have the "dictio
 ***
  - LIMITS
 
-** ENCOMP ** currently only supports the Italian language, but it is not excluded that other languages ​​may be added in the future.
+**ENCOMP** currently only supports the Italian language, but it is not excluded that other languages ​​may be added in the future.
 
 This compression method is based on a dictionary, therefore the accents of the inserted string will be removed, the punctuation of the inserted string will be removed, the uppercase letters will be changed to lowercase. In the future this may change and for this very reason, currently, it is a lossy compression.
 ***
 
  - BENEFITS
 
-One of the most advantageous aspects of ** ENCOMP ** is to leave the compressed file in a file with ".txt" format, avoiding extension changes that could cause the file size to increase.
+One of the most advantageous aspects of **ENCOMP** is to leave the compressed file in a file with ".txt" format, avoiding extension changes that could cause the file size to increase.
 
-The comparisons between ** 7zip, WinZip and ENCOMP ** are shown below.
+The comparisons between **7zip, WinZip and ENCOMP** are shown below.
 ! [comparison] (https://user-images.githubusercontent.com/91328373/147512599-0fea471c-8c50-4679-8c11-d7643441aa2d.png)
 
 
@@ -88,11 +88,11 @@ Original file: 381 bytes
 WinZip: 351 bytes
 ENCOMP: 248 bytes
 
-Compression ** ENCOMP **, out of the 3, * is the best *.
+Compression **ENCOMP**, out of the 3, *is the best*.
 
 
 
-** The content of the original file is **: "
+**The content of the original file is**: "
 
 > It uses a list of 279,894 Italian words, sorted in order
 > increasing in length, called "dictionary", to compress sentences or
@@ -103,7 +103,7 @@ Compression ** ENCOMP **, out of the 3, * is the best *.
 
 "
 
-** The content of the file compressed with the ENCOMP method is **: "
+**The content of the file compressed with the ENCOMP method is**: "
 
 > 32a a209 111 1360 c 44556! 3f7b ef10 ff13 1a 3e14 167ae c 19189 d9b
 > "dictionary" e2 215ca 1017 4 3f7b c 1afc9 19189 42ed8 d340 2 cc 19
@@ -112,7 +112,7 @@ Compression ** ENCOMP **, out of the 3, * is the best *.
 
 "
 
-** The content of the unzipped file is **: "
+**The content of the unzipped file is**: "
 
 > it uses a list of 279894 Italian words sorted in order
 > increasing length called "dictionary" to compress phrases or
@@ -123,4 +123,4 @@ Compression ** ENCOMP **, out of the 3, * is the best *.
 
 "
 
-In the future ** ENCOMP ** will be improved, also integrating punctuation, capital letters and accents.
+In the future **ENCOMP** will be improved, also integrating punctuation, capital letters and accents.
