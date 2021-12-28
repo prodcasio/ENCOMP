@@ -4,8 +4,9 @@
 
 **ENCOMP** is a dictionary compression method, developed on **Python** language.
 It is ranked as the best on the internet, given comparisons with the two most popular compression methods: **7z** and **Winzip**.
-Its use should be intended for sending encrypted and compressed messages to prevent third parties from intercepting communications.
-For efficient encryption, generate a dictionary containing the same words as the original "Italia2.txt" but in mixed order.
+
+Its use should be intended for **sending encrypted and compressed messages** to prevent **third parties** from **intercepting communications**.
+For efficient encryption, generate a dictionary containing the same words as the original "Italia2.txt" but in **mixed order**.
 ***
  - HOW DOES IT WORK
 
