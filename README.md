@@ -4,6 +4,8 @@
 
 ** ENCOMP ** is a dictionary compression method, developed on ** Python ** language.
 It is ranked as the best on the internet, given comparisons with the two most popular compression methods: ** 7z ** and ** Winzip **.
+Its use should be intended for sending encrypted and compressed messages to prevent third parties from intercepting communications.
+For efficient encryption, generate a dictionary containing the same words as the original "Italia2.txt" but in mixed order.
 ***
  - HOW DOES IT WORK
 
@@ -13,29 +15,29 @@ The program will make them incomprehensible to those who do not have the "dictio
 ***
  - PSEUDOCODIFICATION
 > Suppose we had to compress and encode the word
-> "Comparative".
+> "comparati".
 > We insert the word "comparati" into the Python script.
 > The program will search for the same word in the "dictionary" and
 > will report its position in the word list.
 >
 >. . .
 >
-> 91,210 compared
+> 91,210 comparata
 >
-> 91,211 compared
+> 91,211 comparate
 >
-> 91,212 compared <<<
+> 91,212 comparati <<<
 >
-> 91,213 compared
+> 91,213 comparato
 >
-> 91,214 will appear
+> 91,214 comparira
 >
 >. . .
 >
 > The word “comparati” is located in position 91.212.
 >
 > We can see how, using only this first conversion,
-> this method was able to save 4 characters. ("Compare" >>>
+> this method was able to save 4 characters. ("comparati" >>>
 > "91212")
 >
 > The program then converts this number from decimal to hexadecimal.
@@ -63,7 +65,7 @@ The program will make them incomprehensible to those who do not have the "dictio
 > Words with grammatical errors or those that do not exist within the
 > list will be reported as original.
 >
-> ("Compartai" >> "compartai")
+> ("Comparatti" >> "comparatti")
 
 ***
  - LIMITS
@@ -96,7 +98,7 @@ Compression ** ENCOMP **, out of the 3, * is the best *.
 > increasing in length, called "dictionary", to compress sentences or
 > words of any length, syntactically correct or not. The
 > program will make them incomprehensible to the eyes of those who do not have the right
-> possess the "dictionary", making this compression method too
+> possess the "dictionary", making this compression method also
 > an efficient coding method.
 
 "
