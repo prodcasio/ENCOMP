@@ -1,125 +1,124 @@
-
 # ENCOMP
 
- - COS'È ENCOMP
+ - WHAT IS ENCOMP
 
-**ENCOMP** è un metodo di compressione a dizionario, sviluppato su linguaggio **Python**.
-Viene classificato come il migliore su internet, date le comparazioni con i due più famosi metodi di compressioni: **7z** e **Winzip**.
+** ENCOMP ** is a dictionary compression method, developed on ** Python ** language.
+It is ranked as the best on the internet, given comparisons with the two most popular compression methods: ** 7z ** and ** Winzip **.
 ***
- - COME FUNZIONA
+ - HOW DOES IT WORK
 
-Esso sfrutta una lista di **279.894** parole italiane, ordinate in ordine di lunghezza crescente, detto “*dizionario*”, per comprimere frasi o parole di qualsiasi lunghezza, sintatticamente corrette e non. 
+It uses a list of ** 279.894 ** Italian words, ordered in order of increasing length, called "* dictionary *", to compress sentences or words of any length, syntactically correct or not.
 
-Il programma le renderà incomprensibili agli occhi di chi non ha in possesso il “dizionario”, rendendo questo metodo di compressione anche un efficiente metodo di codifica.
+The program will make them incomprehensible to those who do not have the "dictionary", making this compression method also an efficient coding method.
 ***
- - PSEUDOCODIFICA
-> Supponiamo che dovessimo comprimere e codificare la parola
-> “comparati”.
-> Inseriamo la parola “comparati” all’interno dello script Python.
-> Il programma andrà a ricercare nel “dizionario” la medesima parola e
-> ne riporterà la posizione nella lista di parole.
-> 
-> . . .
-> 
-> 91.210 comparata
-> 
-> 91.211 comparate
-> 
-> 91.212 comparati <<<
-> 
-> 91.213 comparato
-> 
-> 91.214 comparira
-> 
-> . . .
-> 
-> La parola “comparati” è situata nella posizione 91.212.
-> 
-> Possiamo notare come, utilizzando solamente questa prima conversione,
-> questo metodo sia riuscito a risparmiare 4 caratteri. (“comparati” >>>
-> “91212”)
-> 
-> Il programma converte poi questo numero da decimale a esadecimale.
-> 
-> (“91212” >>> “1644c”)
-> 
-> In questo caso il numero di caratteri non è stato ridotto ma se la
-> posizione fosse stata “12389”, convertita in esadecimale, risulterebbe
-> uguale a “3065”, risparmiando ulteriori caratteri.
-> 
-> Gli accenti della stringa inserita verranno rimossi.
-> 
-> La punteggiatura della stringa inserita verrà rimossa.
-> 
-> Le lettere maiuscole verranno trasformate in minuscole.
-> 
-> Nel caso la stringa inserita contenesse numeri, si procederà
-> convertendo il numero in esadecimale, aggiungendo un punto esclamativo
-> “!” dopo l’ultima cifra.
-> 
-> (“2021” >>> “7e5!”)
-> 
-> Il numero non verrà compresso.
-> 
-> Le parole con errori grammaticali o non esistenti all’interno della
-> lista verranno riportate come originali.
-> 
-> (“compartai” >> “compartai”)
+ - PSEUDOCODIFICATION
+> Suppose we had to compress and encode the word
+> "Comparative".
+> We insert the word "comparati" into the Python script.
+> The program will search for the same word in the "dictionary" and
+> will report its position in the word list.
+>
+>. . .
+>
+> 91,210 compared
+>
+> 91,211 compared
+>
+> 91,212 compared <<<
+>
+> 91,213 compared
+>
+> 91,214 will appear
+>
+>. . .
+>
+> The word “comparati” is located in position 91.212.
+>
+> We can see how, using only this first conversion,
+> this method was able to save 4 characters. ("Compare" >>>
+> "91212")
+>
+> The program then converts this number from decimal to hexadecimal.
+>
+> ("91212" >>> "1644c")
+>
+> In this case the number of characters has not been reduced but if the
+> position had been “12389”, converted into hexadecimal, it would result
+> same as “3065”, saving additional characters.
+>
+> The accents of the inserted string will be removed.
+>
+> The punctuation of the entered string will be removed.
+>
+> Uppercase letters will be changed to lowercase.
+>
+> If the inserted string contains numbers, we will proceed
+> converting the number to hexadecimal, adding an exclamation point
+> "!" after the last digit.
+>
+> ("2021" >>> "7e5!")
+>
+> The number will not be compressed.
+>
+> Words with grammatical errors or those that do not exist within the
+> list will be reported as original.
+>
+> ("Compartai" >> "compartai")
 
 ***
- - LIMITI
+ - LIMITS
 
-**ENCOMP**, attualmente, supporta solamente la lingua italiana, ma non si esclude che altre lingue possano essere aggiunte in futuro.
+** ENCOMP ** currently only supports the Italian language, but it is not excluded that other languages ​​may be added in the future.
 
-Questo metodo di compressione è basato su un dizionario, di conseguenza gli accenti della stringa inserita verranno rimossi, la punteggiatura della stringa inserita verrà rimossa, le lettere maiuscole verranno trasformate in minuscole. In futuro questo potrà cambiare e proprio per questo motivo, attualmente, è una compressione lossy.
+This compression method is based on a dictionary, therefore the accents of the inserted string will be removed, the punctuation of the inserted string will be removed, the uppercase letters will be changed to lowercase. In the future this may change and for this very reason, currently, it is a lossy compression.
 ***
 
- - VANTAGGI
+ - BENEFITS
 
-Uno degli aspetti più vantaggiosi di **ENCOMP** è quello di lasciare il file compresso in un file con formato “.txt” evitando modifiche di estensioni che potrebbero causare l’aumento delle dimensioni del file.
+One of the most advantageous aspects of ** ENCOMP ** is to leave the compressed file in a file with ".txt" format, avoiding extension changes that could cause the file size to increase.
 
-Di seguito si mostrano le comparazioni tra **7zip, WinZip e ENCOMP**.
-![comparazione](https://user-images.githubusercontent.com/91328373/147512599-0fea471c-8c50-4679-8c11-d7643441aa2d.png)
-
-
-File Originale: 381 byte
-7z: 391 byte
-WinZip: 351 byte
-ENCOMP: 248 byte
-
-La compressione **ENCOMP**, tra le 3, *risulta la migliore*.
+The comparisons between ** 7zip, WinZip and ENCOMP ** are shown below.
+! [comparison] (https://user-images.githubusercontent.com/91328373/147512599-0fea471c-8c50-4679-8c11-d7643441aa2d.png)
 
 
+Original file: 381 bytes
+7z: 391 bytes
+WinZip: 351 bytes
+ENCOMP: 248 bytes
 
-**Il contenuto del file originale è**: “
+Compression ** ENCOMP **, out of the 3, * is the best *.
 
-> Esso sfrutta una lista di 279.894 parole italiane, ordinate in ordine
-> crescente di lunghezza, detto “dizionario”, per comprimere frasi o
-> parole di qualsiasi lunghezza, sintatticamente corrette e non. Il
-> programma le renderà incomprensibili agli occhi di chi non ha in
-> possesso il “dizionario”, rendendo questo metodo di compressione anche
-> un efficiente metodo di codifica.
 
-”
 
-**Il contenuto del file compresso con il metodo ENCOMP è**: “
+** The content of the original file is **: "
+
+> It uses a list of 279,894 Italian words, sorted in order
+> increasing in length, called "dictionary", to compress sentences or
+> words of any length, syntactically correct or not. The
+> program will make them incomprehensible to the eyes of those who do not have the right
+> possess the "dictionary", making this compression method too
+> an efficient coding method.
+
+"
+
+** The content of the file compressed with the ENCOMP method is **: "
 
 > 32a a209 111 1360 c 44556! 3f7b ef10 ff13 1a 3e14 167ae c 19189 d9b
-> "dizionario" e2 215ca 1017 4 3f7b c 1afc9 19189 42ed8 d340 2 cc 19
-> 1adbe 1e 977f 424ab 145 164c c 6e cc 17 1a 10887 19 "dizionario" 10f6c
+> "dictionary" e2 215ca 1017 4 3f7b c 1afc9 19189 42ed8 d340 2 cc 19
+> 1adbe 1e 977f 424ab 145 164c c 6e cc 17 1a 10887 19 "dictionary" 10f6c
 > 42aa 3a96 c 354c9 83d 32 22307 3a96 c d058
 
-”
+"
 
-**Il contenuto del file decompresso è**: “
+** The content of the unzipped file is **: "
 
-> esso sfrutta una lista di 279894 parole italiane ordinate in ordine
-> crescente di lunghezza detto "dizionario" per comprimere frasi o
-> parole di qualsiasi lunghezza sintatticamente corrette e non il
-> programma le rendera incomprensibili agli occhi di chi non ha in
-> possesso il "dizionario" rendendo questo metodo di compressione anche
-> un efficiente metodo di codifica
+> it uses a list of 279894 Italian words sorted in order
+> increasing length called "dictionary" to compress phrases or
+> words of any length syntactically correct and not the
+> program will make them incomprehensible to those who do not have the right
+> possess the "dictionary" by making this compression method also
+> an efficient coding method
 
-”
+"
 
-In futuro **ENCOMP** verrà migliorato, integrando anche la punteggiatura, le lettere maiuscole e gli accenti.
+In the future ** ENCOMP ** will be improved, also integrating punctuation, capital letters and accents.
