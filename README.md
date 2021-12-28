@@ -85,8 +85,11 @@ The comparisons between **7zip, WinZip and ENCOMP** are shown below.
 
 
 Original file: 381 bytes
+
 7z: 391 bytes
+
 WinZip: 351 bytes
+
 ENCOMP: 248 bytes
 
 Compression **ENCOMP**, out of the 3, *is the best*.
